@@ -1,0 +1,151 @@
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-footer{
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 250px 0 100px 0;
+    background-image: url(images/IMG_6215.JPG);
+}
+
+.container-footer .title{
+    position: absolute;
+    top: 90px;
+    left: 10%;
+}
+@media (min-width : 684px) {
+    .container-footer .title{
+        left: 8%;
+    }
+  
+}
+.container-footer .title h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+}
+@media (max-width : 378px){
+    .container-footer .title h1{
+        font-size: 32px;
+    }
+}
+.container-footer .title p{
+    margin-top: 15px;
+    color: #6D6D6D;
+    font-size: 12px;
+}
+@media (max-width : 378px){
+    .container-footer .title p{
+        width: 90%;
+    }
+}
+
+.wrapperFooter {
+  position: relative;
+  /* border: 1px solid black; */
+  /* width: 90%;
+    max-width: 1536px; */
+  margin-inline: auto;
+  height: 155px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 4%,
+    rgba(0, 0, 0, 1) 96%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+.wrapperFooter .item {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  left: max(calc(200px * 6), 100%);
+  animation: scrollLeft 40s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  overflow: hidden;
+  background: transparent;
+}
+.wrapperFooter:hover .item{
+  animation-play-state: paused;
+}
+
+.wrapperFooter .item1 {
+  animation-delay: calc(40s / 6 * (6 - 1) * -1);
+}
+.wrapperFooter .item2 {
+  animation-delay: calc(40s / 6 * (6 - 2) * -1);
+}
+.wrapperFooter .item3 {
+  animation-delay: calc(40s / 6 * (6 - 3) * -1);
+}
+.wrapperFooter .item4 {
+  animation-delay: calc(40s / 6 * (6 - 4) * -1);
+}
+.wrapperFooter .item5 {
+  animation-delay: calc(40s / 6 * (6 - 5) * -1);
+}
+.wrappeeFooter .item6 {
+  animation-delay: calc(40s / 6 * (6 - 6) * -1);
+}
+
+.wrapperFooter .item img{
+    width: 95%;
+    height: 95%;
+    border-radius: 11px;
+    animation: Poppop 3s infinite;
+}
+.wrapperFooter .item .second{
+    animation: Poppop 3 infinite;
+    animation-delay: -1.5s;
+}
+.wrapperFooter .item .vuejs{
+    width: 105%;
+    height: 105%;
+    animation: Popop 3s infinite;
+}
+@keyframes Poppop {
+    0%{
+        width: 95%;
+        height: 95%;
+    }
+    50%{
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        width: 95%;
+        height: 95%;
+    }
+}
+@keyframes Popop {
+    0%{
+        width: 105%;
+        height: 105%;
+    }
+    50%{
+        width: 110%;
+        height: 110%;
+    }
+    100%{
+        width: 105%;
+        height: 105%;
+    }
+}

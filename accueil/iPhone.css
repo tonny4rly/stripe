@@ -1,0 +1,338 @@
+
+
+.iPhone{
+    width: 100%;
+    padding: 60px 0;
+    background: linear-gradient(30deg, white 50%, #e7f0fe8e 40%, #fcf1c357 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iPhone .left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iPhone .left .title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.iPhone .left .title h1{
+    width: 65%;
+    font-family: "Raleway",sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: -3px;
+    line-height: 60px;
+}
+.iPhone .left .title h1 .first{
+    color: transparent;
+    background: linear-gradient(130deg, #0f0f1f 50%, #4B0082 70%, #fd89fd 75%, #e18dc8 80%, #0f0f1f 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 250% 250%;
+    animation: gradientAnimation 7.5s infinite;
+}
+.iPhone .left .title h1 .second{
+    color: transparent;
+    background: linear-gradient(130deg, #0f0f1f 50%, #4B0082 70%, #fd89fd 75%, #e18dc8 80%, #0f0f1f 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 250% 250%;
+    animation: gradientAnimation 22.5s infinite;
+}
+.iPhone .left .title h1 .third{
+    color: transparent;
+    background: linear-gradient(130deg, #0f0f1f 50%, #4B0082 70%, #fd89fd 75%, #e18dc8 80%, #0f0f1f 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 250% 250%;
+    animation: gradientAnimation 15s infinite;  
+}
+.iPhone .left .title h1 .quatre{
+    color: transparent;
+    background: linear-gradient(130deg, #0f0f1f 50%, #4B0082 70%, #fd89fd 75%, #e18dc8 80%, #0f0f1f 85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 250% 250%;
+    animation: gradientAnimation 30s infinite;  
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 160% 50%;
+    }
+}
+.iPhone .left .title p{
+    font-size: 18px;
+    line-height: 29px;
+    margin-top: 20px;
+    width: 75%;
+}
+.iPhone .right{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iPhone .right img{
+    width: 85%;
+    animation: ShowPhone 3s;
+}
+@keyframes ShowPhone {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.iPhone .right .blabla{
+    position: absolute;
+    width: 30%;
+    user-select: none;
+}
+.iPhone .right .blabla h2{
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -20%;
+    animation: Descente 3s;
+
+    color: transparent;
+    background: linear-gradient(130deg, #6772e5, #9b51e0);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+@keyframes Descente {
+    0% { margin-top:-100%; opacity: 0;}
+    50% { margin-top:-100%; opacity: 0;}
+    80% { margin-top:20%; opacity: 1;}
+    100% { margin-top:-20%; opacity: 1;}
+}
+.iPhone .right .blabla p{
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    margin-left: 6%;
+    animation: ShowText 5s;
+}
+@keyframes ShowText {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/* .iPhone .right .google{
+    position: absolute;
+    width: 25%;
+} */
+
+/* RESPONSIVE DESIGN TEXTE */
+
+@media (min-width : 1441px){
+    .iPhone .left .title p{
+        margin-right: -10%;
+    }
+}
+
+@media (max-width : 1440px){
+    .iPhone .left .title h1{
+        font-size: 76px;
+        line-height: 90px;
+        width: 85%;
+    }
+    .iPhone .left .title p{
+        width: 85%;
+    }
+}
+
+@media (max-width : 899px) {
+    .iPhone{
+        flex-wrap: wrap;
+    }
+    .iPhone .left .title{
+        justify-content: center;
+    }
+    .iPhone .left .title h1{
+        width: 80%;
+        font-size: 69px;
+        line-height: 75px;
+    }
+    .iPhone .left .title p{
+        font-size: 18px;
+        margin-top: 30px;
+        margin-right: 0%;
+        width: 80%;
+    }
+    .iPhone .right{
+        display: none;
+    }
+}
+
+@media (max-width : 768px){
+    .iPhone .left .title h1{
+        font-size: 65px;
+        line-height: 70px;
+        width: 85%;
+    }
+    .iPhone .left .title p{
+        width: 85%;
+    }
+
+}
+
+@media (max-width : 425px){
+    .iPhone .left .title h1{
+        font-size: 60px;
+        line-height: 53px;
+        width: 85%;
+    }
+    .iPhone .left .title p{
+        width: 85%;
+    }
+
+}
+
+@media (max-width : 375px){
+    .iPhone .left .title h1{
+        font-size: 50px;
+        line-height: 50px;
+        width: 85%;
+    }
+    .iPhone .left .title p{
+        width: 85%;
+    }
+
+}
+
+@media (max-width : 320px){
+    .iPhone .left .title h1{
+        font-size: 43px;
+        line-height: 45px;
+        width: 85%;
+    }
+    .iPhone .left .title p{
+        width: 85%;
+    }
+
+}
+
+/* RESPONSIVE DESIGN IPHONE */
+
+@media (max-width : 2560px) and (min-width : 2001px) {
+    .iPhone .right img{
+        width: 40%;
+    }  
+}
+
+@media (max-width : 2000px) and (min-width : 1706px) {
+    .iPhone .right img{
+        width: 50%;
+    }  
+}
+
+@media (max-width : 1705px) and (min-width : 1441px) {
+    .iPhone .right img{
+        width: 50%
+    }  
+}
+
+@media (max-width : 1440px) and (min-width : 1330px) {
+    .iPhone .right img{
+        width: 60%;
+    }  
+}
+
+@media (max-width : 1329px) and (min-width : 1232px) {
+    .iPhone .right img{
+        width: 65%;
+    }  
+}
+
+@media (max-width : 1231px) and (min-width : 1090px) {
+    .iPhone .right img{
+        width: 75%;
+    }  
+}
+
+@media (max-width : 1089px) and (min-width : 1025px) {
+    .iPhone .right img{
+        width: 80%;
+    }  
+}
+
+/* TEXTE DANS L'IPHONE */
+
+@media (min-width : 2050px){
+    .iPhone .right .blabla{
+        width: 15%;
+    }
+    .iPhone .right .blabla h2{
+        font-size: 26px;
+    }
+}
+
+@media (max-width : 2049px) and (min-width : 1987px){
+    .iPhone .right .blabla{
+        width: 18%;
+    }
+    .iPhone .right .blabla h2{
+        font-size: 27px;
+    }
+}
+
+@media (max-width : 1986px) and (min-width : 1441px){
+    .iPhone .right .blabla{
+        width: 20%;
+    }
+    .iPhone .right .blabla h2{
+        font-size: 23px;
+    }
+}
+
+@media (max-width : 1440px) and (min-width : 1439px){
+    .iPhone .right .blabla{
+        width: 23%;
+    }
+}
+
+@media (max-width : 1438px) and (min-width : 1232px) {
+    .iPhone .right .blabla{
+        width: 25%;
+    }
+}
+
+@media (max-width : 1231px) and (min-width : 1213px) {
+    .iPhone .right .blabla{
+        width: 30%;
+    }
+}
+
+@media (max-width : 1212px) and (min-width : 1120px) {
+    .iPhone .right .blabla{
+        width: 23%;
+    }
+    .iPhone .right .blabla h2{
+        font-size: 26px;
+    }
+}
+
+@media (max-width : 1119px) and (min-width : 1059px){
+    .iPhone .right .blabla h2{
+        font-size: 27px;
+    }
+}
+
+@media (max-width : 990px) {
+    .iPhone .right .blabla h2{
+        font-size: 27px;
+    }
+}
+
